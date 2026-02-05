@@ -1,8 +1,3 @@
-/**
- * Attendance Page
- * Purpose: Attendance management interface
- * Why: Core requirement - mark and view attendance
- */
 import React, { useState, useEffect } from 'react';
 import AttendanceList from '../components/attendance/AttendanceList';
 import AttendanceForm from '../components/attendance/AttendanceForm';

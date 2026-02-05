@@ -1,8 +1,3 @@
-/**
- * Main Layout Component
- * Purpose: Wrap all pages with consistent layout
- * Why: Navbar appears on all pages
- */
 import React from 'react';
 import Navbar from './Navbar';
 

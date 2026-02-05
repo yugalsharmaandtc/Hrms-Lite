@@ -1,8 +1,3 @@
-/**
- * Employees Page
- * Purpose: Employee management interface
- * Why: Core requirement - add, view, delete employees
- */
 import React, { useState, useEffect } from 'react';
 import EmployeeList from '../components/employees/EmployeeList';
 import EmployeeForm from '../components/employees/EmployeeForm';

@@ -1,7 +1,3 @@
-/**
- * Attendance API Service
- * Purpose: Encapsulate all attendance-related API calls
- */
 import api from './api';
 
 const attendanceService = {

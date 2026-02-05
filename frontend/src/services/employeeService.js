@@ -1,8 +1,3 @@
-/**
- * Employee API Service
- * Purpose: Encapsulate all employee-related API calls
- * Why: Components don't need to know HTTP details
- */
 import api from './api';
 
 const employeeService = {

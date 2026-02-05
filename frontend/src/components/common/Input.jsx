@@ -1,7 +1,3 @@
-/**
- * Reusable Input Component
- * Purpose: Consistent form input styling
- */
 import React from 'react';
 
 const Input = ({

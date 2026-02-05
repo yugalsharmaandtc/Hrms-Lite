@@ -1,8 +1,3 @@
-/**
- * Attendance Filter Component (BONUS)
- * Purpose: Filter attendance by employee and date range
- * Why: Makes large datasets manageable
- */
 import React, { useState, useEffect } from 'react';
 import Select from '../common/Select';
 import Input from '../common/Input';

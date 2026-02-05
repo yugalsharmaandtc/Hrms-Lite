@@ -1,13 +1,3 @@
-/**
- * Utility Helper Functions
- * Purpose: Reusable functions across the application
- */
-
-/**
- * Format date to readable string
- * @param {string} dateString - ISO date string
- * @returns {string} Formatted date
- */
 export const formatDate = (dateString) => {
   const date = new Date(dateString);
   return date.toLocaleDateString('en-US', {
@@ -17,10 +7,6 @@ export const formatDate = (dateString) => {
   });
 };
 
-/**
- * Get today's date in YYYY-MM-DD format
- * @returns {string}
- */
 export const getTodayDate = () => {
   const today = new Date();
   const year = today.getFullYear();

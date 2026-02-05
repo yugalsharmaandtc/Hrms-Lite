@@ -1,8 +1,3 @@
-/**
- * Error Message Component
- * Purpose: Display error messages consistently
- * Why: User feedback for failed operations
- */
 import React from 'react';
 
 const ErrorMessage = ({ message, onRetry }) => {

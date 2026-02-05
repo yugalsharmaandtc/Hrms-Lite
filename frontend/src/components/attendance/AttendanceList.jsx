@@ -1,8 +1,3 @@
-/**
- * Attendance List Component
- * Purpose: Display attendance records in table format
- * Why: Tabular data is best for records with multiple columns
- */
 import React from 'react';
 import LoadingSpinner from '../common/LoadingSpinner';
 import EmptyState from '../common/EmptyState';

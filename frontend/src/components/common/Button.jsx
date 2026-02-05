@@ -1,8 +1,3 @@
-/**
- * Reusable Button Component
- * Purpose: Consistent button styling across app
- * Why: DRY principle, easy to maintain design system
- */
 import React from 'react';
 
 const Button = ({

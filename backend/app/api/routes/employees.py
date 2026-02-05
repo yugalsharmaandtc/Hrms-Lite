@@ -1,8 +1,3 @@
-"""
-Employee API Routes
-Purpose: CRUD operations for employees
-Why: RESTful design, clear separation of concerns
-"""
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from sqlalchemy import func
@@ -30,15 +25,6 @@ def create_employee(
     employee: EmployeeCreate,
     db: Session = Depends(get_db)
 ):
-    """
-    Create a new employee with validation
-    
-    Validations:
-    - Unique employee_id
-    - Unique email
-    - Valid email format (handled by Pydantic)
-    """
-    # Check if employee_id already exists
     existing_emp_id = db.query(Employee).filter(
         Employee.employee_id == employee.employee_id
     ).first()
@@ -94,13 +80,6 @@ def get_employees(
     summary="Get employees with attendance statistics (Bonus)"
 )
 def get_employees_with_stats(db: Session = Depends(get_db)):
-    """
-    BONUS FEATURE: Get employees with total present days
-    
-    Why this approach?
-    - Single query with JOIN (efficient)
-    - Calculates stats at database level
-    """
     # Query employees with attendance count
     employees = db.query(
         Employee,

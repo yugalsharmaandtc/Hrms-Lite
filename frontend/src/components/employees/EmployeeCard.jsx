@@ -1,8 +1,3 @@
-/**
- * Employee Card Component
- * Purpose: Display individual employee info
- * Why: Reusable, clean card design
- */
 import React from 'react';
 import Button from '../common/Button';
 

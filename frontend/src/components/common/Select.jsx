@@ -1,7 +1,3 @@
-/**
- * Reusable Select Component
- * Purpose: Consistent dropdown styling
- */
 import React from 'react';
 
 const Select = ({

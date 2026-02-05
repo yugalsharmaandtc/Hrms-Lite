@@ -1,12 +1,6 @@
-/**
- * Axios Configuration
- * Purpose: Centralized API client with interceptors
- * Why: DRY principle, consistent error handling, base URL management
- */
 import axios from 'axios';
 import { API_BASE_URL } from '../utils/constants';
 
-// Create axios instance
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {

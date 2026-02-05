@@ -1,8 +1,3 @@
-/**
- * Attendance Form Component
- * Purpose: Mark attendance for employees
- * Why: Date picker + employee selection
- */
 import React, { useState, useEffect } from 'react';
 import Select from '../common/Select';
 import Input from '../common/Input';

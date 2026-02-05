@@ -1,8 +1,3 @@
-/**
- * Employee Form Component
- * Purpose: Form to add new employees
- * Why: Reusable form with validation
- */
 import React, { useState } from 'react';
 import Input from '../common/Input';
 import Select from '../common/Select';

@@ -1,8 +1,3 @@
-/**
- * Loading Spinner Component
- * Purpose: Show loading state during API calls
- * Why: Better UX, indicates processing
- */
 import React from 'react';
 
 const LoadingSpinner = ({ size = 'md', message = 'Loading...' }) => {

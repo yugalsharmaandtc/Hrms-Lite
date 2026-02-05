@@ -1,8 +1,3 @@
-/**
- * Employee List Component
- * Purpose: Display grid of employee cards
- * Why: Responsive grid layout
- */
 import React from 'react';
 import EmployeeCard from './EmployeeCard';
 import LoadingSpinner from '../common/LoadingSpinner';

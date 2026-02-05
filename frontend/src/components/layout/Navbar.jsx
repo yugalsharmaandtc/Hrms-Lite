@@ -1,8 +1,3 @@
-/**
- * Navigation Bar Component
- * Purpose: Top navigation with links
- * Why: Consistent navigation across pages
- */
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 

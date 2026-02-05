@@ -1,8 +1,3 @@
-/**
- * Dashboard Page (BONUS)
- * Purpose: Overview of HR statistics
- * Why: Quick summary for admin
- */
 import React, { useState, useEffect } from 'react';
 import LoadingSpinner from '../components/common/LoadingSpinner';
 import ErrorMessage from '../components/common/ErrorMessage';

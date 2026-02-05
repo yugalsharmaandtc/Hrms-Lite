@@ -1,8 +1,3 @@
-"""
-Attendance API Routes
-Purpose: Mark and retrieve attendance records
-Why: Separate concerns, date filtering for bonus feature
-"""
 from fastapi import APIRouter, Depends, HTTPException, status, Query
 from sqlalchemy.orm import Session
 from sqlalchemy import func
@@ -31,15 +26,6 @@ def mark_attendance(
     attendance: AttendanceCreate,
     db: Session = Depends(get_db)
 ):
-    """
-    Mark attendance for an employee on a specific date
-    
-    Validations:
-    - Employee must exist
-    - No duplicate attendance for same employee on same date
-    - Status must be Present or Absent (Pydantic validator)
-    """
-    # Check if employee exists
     employee = db.query(Employee).filter(
         Employee.id == attendance.employee_id
     ).first()
@@ -82,18 +68,6 @@ def get_attendance_records(
     end_date: Optional[date] = Query(None, description="Filter until this date"),
     db: Session = Depends(get_db)
 ):
-    """
-    BONUS FEATURE: Get attendance records with date filtering
-    
-    Filters:
-    - By employee (optional)
-    - By date range (optional)
-    
-    Why this approach?
-    - Flexible filtering
-    - Single query with JOINs
-    - Returns employee details with attendance
-    """
     # Base query with employee details
     query = db.query(
         Attendance.id,

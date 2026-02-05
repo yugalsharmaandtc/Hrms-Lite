@@ -1,8 +1,3 @@
-/**
- * Empty State Component
- * Purpose: Show when no data is available
- * Why: Better UX than blank screen
- */
 import React from 'react';
 
 const EmptyState = ({ 
