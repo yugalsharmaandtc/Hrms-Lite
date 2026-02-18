@@ -20,6 +20,8 @@ class AttendanceCreate(AttendanceBase):
     employee_id: int = Field(..., description="Employee ID")
 
 
+# FINAL CODE CLASS 
+
 class AttendanceResponse(AttendanceBase):
     id: int
     employee_id: int
